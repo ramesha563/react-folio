@@ -1,0 +1,4 @@
+body, section, .about-container, .skills-section, .projects-section,
+.resume-section, .contact-section, .navbar {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}

@@ -1,0 +1,134 @@
+.hero-section {
+  background-image: url('../assets/2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 93vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #fff;
+  white-space: nowrap;
+  border-right: 3px solid #fff;
+  overflow: hidden;
+  width: 28ch;
+  animation: typing 4s steps(28, end) infinite, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 28ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+@keyframes rotateToggle {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.hero-theme-toggle.spin {
+  animation: rotateToggle 0.5s ease;
+}
+
+.hero-theme-toggle {
+  position: fixed;
+  top: 20px;       /* fixed corner position */
+  right: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 1001;
+  transition: background 0.3s, color 0.3s;
+}
+
+.hero-theme-toggle:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+body.dark-mode .hero-theme-toggle {
+  
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+body.dark-mode .hero-theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* phone*/
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 70vh;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .hero-text h1 span {
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 2px solid #fff;
+    overflow: hidden;
+  }
+
+  .hero-text h1 .line1 {
+    width: 9ch; 
+    animation: typing1 2s steps(9, end) forwards, blink 0.75s step-end infinite;
+  }
+
+  .hero-text h1 .line2 {
+    width: 18ch; 
+    animation: typing2 2s steps(18, end) 2s forwards, blink 0.75s step-end infinite;
+  }
+
+  @keyframes typing1 {
+    from { width: 0; }
+    to { width: 9ch; }
+  }
+  @keyframes typing2 {
+    from { width: 0; }
+    to { width: 18ch; }
+  }
+}
+
+/* drkthemww*/
+body.dark-mode .hero-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+body.dark-mode .hero-section {
+  filter: brightness(0.8);
+}

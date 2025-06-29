@@ -1,0 +1,123 @@
+.projects-section {
+  padding: 100px 10%;
+  background: linear-gradient(to top left, #fa6c6c9a, rgba(250, 116, 116, 0.633));
+  text-align: center;
+  border-radius: 100px 100px 3px 8px;
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.category-heading {
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  color: #333;
+  text-align: left;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+  position: relative;
+  border-top: 5px solid #ff9900;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category {
+  background-color: #ff9900;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 30px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.eye-icon {
+  color: #ff9900;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.eye-icon:hover {
+  transform: scale(1.3);
+  color: red;
+}
+
+.project-card h3 {
+  margin: 10px 0 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.project-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 12px;
+}
+
+.see-more-btn {
+  margin-top: 20px;
+  padding: 10px 22px;
+  background: linear-gradient(45deg, #ff4b2b, #ff9900);
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.see-more-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ff9900, #ff4b2b);
+}
+
+
+/* darkk*/
+body.dark-mode .projects-section {
+  background: #444;
+  color: #eee;
+}
+body.dark-mode .projects-title,
+body.dark-mode .category-heading,
+body.dark-mode .project-card h3 {
+  color: #fff;
+}
+body.dark-mode .project-card {
+  background: #161616;
+    box-shadow: 0 10px 25px rgba(248, 248, 248, 0.599);
+
+  border-top-color: #ff9900;
+}
+body.dark-mode .category {
+  background-color: #ff9900;
+}
