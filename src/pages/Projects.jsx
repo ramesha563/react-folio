@@ -83,6 +83,13 @@ const projectData = {
       url: 'https://perfumes-react.vercel.app/',
       image: '/projects/aroma.png',
     },
+     {
+      title: 'Islamic Learning ',
+      category: 'React',
+      url: 'https://islamic-self.vercel.app/',
+      image: '/projects/islamic.png',
+    },
+  
     {
       title: 'World Flags ',
       category: 'React',
