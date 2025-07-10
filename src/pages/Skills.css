@@ -1,9 +1,18 @@
-.skills-section {
+/* .skills-section {
   padding: 100px 10%;
-  background: linear-gradient(to bottom right, #fdfbfb, #ebedee);
+    background: url('/assets/bggif.gif') no-repeat center center/cover;
   text-align: center;
   overflow-x: hidden; 
+} */
+
+.skills-section {
+  background: white url('/assets/gif33.gif') no-repeat center center/contain;
+  background-color: white;
+  padding: 100px 10%;
+  text-align: center;
+  overflow-x: hidden;
 }
+
 
 .section-title {
   font-size: 2.8rem;
@@ -171,8 +180,13 @@
 }
 
 /* dark */
-body.dark-mode .skills-section {
+/* body.dark-mode .skills-section {
   background: #1e1e1e;
+} */
+
+body.dark-mode .skills-section {
+  background: black url('/assets/gif33.gif') no-repeat center center/contain;
+  background-color: black;
 }
 
 body.dark-mode .flip-card-front {
