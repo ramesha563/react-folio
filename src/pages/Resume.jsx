@@ -23,7 +23,7 @@ const floatingIcons = [
 const Resume = () => {
   return (
     <section id="resume" className="resume-section">
-      {/* Floating icons layer */}
+      
       <div className="resume-icons-bg">
         {floatingIcons.map((item, i) => {
           const directions = ['fromTop', 'fromLeft', 'fromRight', 'fromBottom'];
@@ -52,7 +52,7 @@ const Resume = () => {
       <div className="resume-container">
         <h2 className="resume-title">Ramesha's Resume</h2>
         <p className="resume-text">Here you can view or download my resume to learn more about my qualifications, skills, and experiences:</p>
-        <a href="/Ramesha Resume CV.pdf" download className="resume-button">
+        <a href="/Rameshacv.pdf" download className="resume-button">
           <FaDownload className="download-icon" /> Download Resume
         </a>
       </div>
