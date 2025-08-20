@@ -76,7 +76,18 @@ const projectData = {
     },
   ],
 
-  "React": [
+  "Mern": [
+    {
+      title: 'Hijab-style',
+      category: 'Mern',
+      url: 'https://hijab-styles-front.vercel.app/',
+      image: '/projects/hijab.png',
+    };
+  ]
+
+  
+
+  "React": [    
     {
       title: 'Arooma',
       category: 'React',
@@ -95,6 +106,13 @@ const projectData = {
       category: 'React',
       url: 'http://flags-api-react-beta.vercel.app/',
       image: '/projects/flags.png',
+    },
+
+           {
+      title: '14-Aug',
+      category: 'React',
+      url: 'https://14-aug.vercel.app/',
+      image: '/projects/14.png',
     },
   ],
 
