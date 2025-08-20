@@ -112,7 +112,7 @@ const projectData = {
       title: '14-Aug',
       category: 'React',
       url: 'https://14-aug.vercel.app/',
-      image: '/projects/14.png',
+      image: '/projects/aug.png',
     },
   ],
 
