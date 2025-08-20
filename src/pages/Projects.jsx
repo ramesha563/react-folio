@@ -82,7 +82,7 @@ const projectData = {
       category: 'Mern',
       url: 'https://hijab-styles-front.vercel.app/',
       image: '/projects/hijab.png',
-    };
+    },
   ],
 
   
