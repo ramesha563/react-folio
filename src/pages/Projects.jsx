@@ -83,7 +83,7 @@ const projectData = {
       url: 'https://hijab-styles-front.vercel.app/',
       image: '/projects/hijab.png',
     };
-  ]
+  ],
 
   
 
