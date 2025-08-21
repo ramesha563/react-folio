@@ -83,6 +83,12 @@ const projectData = {
       url: 'https://hijab-styles-front.vercel.app/',
       image: '/projects/hijab.png',
     },
+      {
+      title: 'crud',
+      category: 'Mern',
+      url: 'https://assig-drg2.vercel.app/',
+      image: '/projects/crud.png',
+    },
   ],
 
   
