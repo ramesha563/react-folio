@@ -1,9 +1,15 @@
 import React, { useState } from 'react';
 import './Skills.css';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaMicrosoft } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGitAlt, FaGithub, FaMicrosoft,  FaPaintBrush } from 'react-icons/fa';
 import { SiTailwindcss, SiFirebase, SiMongodb, SiCanva, SiFlutter, SiBootstrap } from 'react-icons/si';
 
 const skills = [
+   { 
+    name: 'Graphic Designer', 
+    icon: <FaPaintBrush />, 
+    color: '#ff6f61', 
+    desc: 'Creative in designing logos, posters, social media posts, and branding materials.' 
+  },
   { name: 'MS Office', icon: <FaMicrosoft />, color: '#00a1f1', desc: 'Efficient in Word, Excel, PowerPoint for documentation and analysis.' },
   { name: 'HTML', icon: <FaHtml5 />, color: '#e34c26', desc: 'Strong in structuring web pages using semantic HTML5.' },
   { name: 'CSS', icon: <FaCss3Alt />, color: '#264de4', desc: 'Skilled in styling responsive layouts with modern CSS3.' },
