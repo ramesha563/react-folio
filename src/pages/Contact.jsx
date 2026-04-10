@@ -3,6 +3,8 @@ import React from 'react';
 import { FaLinkedin, FaGithub, FaInstagram, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './Contact.css';
 import { FaWhatsapp } from 'react-icons/fa6';
+import { FaBehance } from "react-icons/fa";
+
 
 const Contact = () => {
   return (
@@ -30,6 +32,15 @@ const Contact = () => {
           <FaInstagram className="icon" />
           <span>Instagram</span>
         </a> 
+     
+<a 
+  href="https://www.behance.net/RameeshaWaseem" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <FaBehance className="icon" />
+  <span>Behance</span>
+</a>
 
 
         {/* <div class="contact-item">
